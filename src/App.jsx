@@ -18,7 +18,7 @@ const domains = [
   {
     id: 'market',
     number: '02',
-    name: 'Market intelligence',
+    name: 'Market intelligence',gg
     title: 'Demand and competitors',
     description: 'Investigate customer needs, competing products, pricing and potential sales opportunities.',
     endpoint: '/api/analyze-product',
@@ -142,12 +142,12 @@ function App() {
     setForm((current) => ({ ...current, [field]: value }))
   }
 
-  function startAssessment(domainId) {
+function startAssessment(domainId) {
     setDomain(domainId)
     setReport(null)
     setError('')
     goTo('assessment')
-  }
+}
 
   async function submitAssessment(event) {
     event.preventDefault()
@@ -450,7 +450,7 @@ function App() {
                   {domains.map((item) => <span key={item.id}>{item.number} {item.name}</span>)}
                 </div>
               </div>
-            )}
+            )}S
           </section>
 
           <section className="proof-strip">
