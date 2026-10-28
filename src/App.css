@@ -290,9 +290,9 @@ button:disabled { opacity: 0.55; cursor: not-allowed; }
 }
 .workflow-trigger-arrow { margin-left: auto; color: #b6a2c6; font-size: 18px; font-weight: 400; }
 .workflow-popup {
-  position: absolute;
-  right: 0;
-  bottom: calc(100% + 10px);
+  position: static;
+  right:auto;
+  bottom: auto;
   width: 100%;
   padding: 23px;
   border: 1px solid #403548;
