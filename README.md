@@ -227,3 +227,20 @@ License
 
 No license has been specified yet. Add a LICENSE file before
 presenting this project as open source.
+
+## 📚 Project Documentation
+
+Detailed project documentation is available in the [`docs`](./docs/) folder.
+
+* **Installation Guide:** [`INSTALLATION_GUIDE.md`](./docs/INSTALLATION_GUIDE.md)
+* **Feature List:** [`FEATURE_LIST.md`](./docs/FEATURE_LIST.md)
+* **System Architecture:** [`ARCHITECTURE.md`](./docs/ARCHITECTURE.md)
+* **Architecture Diagram:** [`ARCHITECTURE_DIAGRAM.pptx`](./docs/ARCHITECTURE_DIAGRAM.pptx)
+* **Business Use Case:** [`BUSINESS_USE_CASE.md`](./docs/BUSINESS_USE_CASE.md)
+* **Business Requirements Document (PDF):** [`BRD_and_Business_Use_Case.pdf`](./docs/BRD_and_Business_Use_Case.pdf)
+* **Business Requirements Document (Word):** [`BRD_and_Business_Use_Case.docx`](./docs/BRD_and_Business_Use_Case.docx)
+* **Future Roadmap:** [`FUTURE_ROADMAP.md`](./docs/FUTURE_ROADMAP.md)
+
+## ⚠️ Disclaimer
+
+Regula-AI provides preliminary AI-generated compliance guidance and business decision support. It does not issue official BIS certifications or replace verification with official government sources or qualified compliance professionals.
