@@ -802,3 +802,27 @@ button:disabled { opacity: 0.55; cursor: not-allowed; }
     left: auto;
   }
 }
+
+
+
+/* FIX: Place the How it connects panel in normal page flow */
+.workflow-popup-wrapper {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 24px 0 0 !important;
+  z-index: auto !important;
+}
+
+.workflow-popup {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
