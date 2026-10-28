@@ -523,3 +523,282 @@ button:disabled { opacity: 0.55; cursor: not-allowed; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+
+
+
+/* =========================================
+   REGULA-AI — DOMAIN WORKSPACE ENHANCEMENTS
+   ========================================= */
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 28px 0;
+}
+
+.domain-card {
+  position: relative;
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 18px;
+  background: var(--surface, #121115);
+  color: var(--text, #e8e5ec);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.domain-card:hover {
+  border-color: var(--purple, #aa97bb);
+  transform: translateY(-3px);
+}
+
+.domain-card h3,
+.domain-card p {
+  margin-top: 10px;
+}
+
+.domain-card p {
+  color: var(--muted, #a49daa);
+  line-height: 1.7;
+}
+
+.domain-number {
+  color: var(--purple, #aa97bb);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+}
+
+.domain-workspace {
+  width: min(100% - 32px, 1100px);
+  margin: 36px auto;
+}
+
+.domain-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.domain-tab {
+  padding: 11px 16px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 10px;
+  background: var(--surface, #121115);
+  color: var(--text, #e8e5ec);
+  cursor: pointer;
+}
+
+.domain-tab.active,
+.domain-tab[aria-selected="true"] {
+  border-color: var(--purple, #aa97bb);
+  background: var(--purple-bg, #211b27);
+}
+
+.analysis-form,
+.domain-form {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 18px;
+  background: var(--surface, #121115);
+}
+
+.analysis-form label,
+.domain-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--text, #e8e5ec);
+  font-weight: 500;
+}
+
+.analysis-form input,
+.analysis-form textarea,
+.analysis-form select,
+.domain-form input,
+.domain-form textarea,
+.domain-form select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 10px;
+  background: var(--bg, #0c0b0e);
+  color: var(--text, #e8e5ec);
+  font: inherit;
+}
+
+.analysis-form textarea,
+.domain-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.analysis-form input:focus,
+.analysis-form textarea:focus,
+.analysis-form select:focus,
+.domain-form input:focus,
+.domain-form textarea:focus,
+.domain-form select:focus {
+  outline: 2px solid var(--purple, #aa97bb);
+  outline-offset: 2px;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.report-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 16px;
+  background: var(--surface, #121115);
+  overflow-wrap: anywhere;
+}
+
+.report-card h3 {
+  margin-top: 0;
+}
+
+.report-card p,
+.report-card li {
+  color: var(--muted, #a49daa);
+  line-height: 1.75;
+}
+
+.report-card ul,
+.report-card ol {
+  padding-left: 22px;
+}
+
+.status-message {
+  margin: 18px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 10px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.status-message.error {
+  border-color: #a44b57;
+  color: #ffb9c0;
+}
+
+.status-message.success {
+  border-color: #367d58;
+}
+
+.verification-note {
+  margin-top: 22px;
+  padding: 16px;
+  border-left: 3px solid var(--purple, #aa97bb);
+  background: var(--purple-bg, #211b27);
+  color: var(--muted, #a49daa);
+  line-height: 1.7;
+}
+
+/* Keep the "How it connects" popup from covering nearby menus. */
+.workflow-popup-wrapper {
+  position: relative;
+  z-index: 20;
+}
+
+.workflow-popup {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  left: auto;
+  z-index: 100;
+  width: min(360px, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+  max-height: 70vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Login and registration layouts */
+.auth-page {
+  box-sizing: border-box;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.auth-card {
+  box-sizing: border-box;
+  width: min(100%, 460px);
+  padding: 30px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 20px;
+  background: var(--surface, #121115);
+}
+
+.auth-card h1,
+.auth-card h2 {
+  margin-top: 0;
+}
+
+.auth-card form {
+  display: grid;
+  gap: 18px;
+}
+
+.auth-card label {
+  display: grid;
+  gap: 8px;
+}
+
+.auth-card input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--border, #2b2730);
+  border-radius: 10px;
+  background: var(--bg, #0c0b0e);
+  color: var(--text, #e8e5ec);
+  font: inherit;
+}
+
+@media (max-width: 700px) {
+  .domain-grid,
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .domain-workspace {
+    width: min(100% - 24px, 1100px);
+    margin: 24px auto;
+  }
+
+  .domain-card,
+  .analysis-form,
+  .domain-form,
+  .auth-card {
+    padding: 20px;
+  }
+
+  .domain-tabs {
+    gap: 8px;
+  }
+
+  .domain-tab {
+    flex: 1 1 auto;
+  }
+
+  .workflow-popup {
+    right: 0;
+    left: auto;
+  }
+}
