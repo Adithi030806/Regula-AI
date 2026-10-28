@@ -1033,3 +1033,126 @@ button:disabled { opacity: 0.55; cursor: not-allowed; }
     padding: 22px;
   }
 }
+
+
+/* Regula-AI frontend enhancements */
+
+textarea,
+input,
+select,
+button {
+  font: inherit;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+}
+
+input,
+textarea,
+select {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* Assessment forms */
+.analysis-form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.analysis-form input,
+.analysis-form textarea,
+.analysis-form select {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.analysis-form button {
+  margin-top: 8px;
+}
+
+/* Domain-specific report layout */
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.report-grid > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.report-grid ul,
+.report-grid ol {
+  padding-left: 22px;
+}
+
+.report-grid li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Login and registration layout */
+.auth-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  box-sizing: border-box;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+}
+
+.auth-card input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Keep the workflow popup from covering nearby menus */
+.workflow-popup-wrapper {
+  position: relative;
+  z-index: 20;
+}
+
+.workflow-popup-wrapper [role="dialog"],
+.workflow-popup-wrapper .workflow-popup {
+  max-width: min(420px, calc(100vw - 32px));
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+/* Responsive layouts */
+@media (max-width: 700px) {
+  .report-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .auth-page {
+    padding: 20px 14px;
+  }
+
+  .auth-card {
+    max-width: 100%;
+  }
+}
+
