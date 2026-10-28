@@ -826,3 +826,50 @@ button:disabled { opacity: 0.55; cursor: not-allowed; }
   max-height: none !important;
   overflow: visible !important;
 }
+
+
+
+/* Regula-AI: definitive How it connects positioning fix */
+.workflow-section.section-wrap {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 24px auto 32px !important;
+  padding: 0 !important;
+  z-index: 1 !important;
+  box-sizing: border-box !important;
+}
+
+.workflow-section .workflow-popup.workflow-popup-static {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.workflow-section .workflow-trigger {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .workflow-section.section-wrap {
+    width: calc(100% - 24px) !important;
+  }
+}
